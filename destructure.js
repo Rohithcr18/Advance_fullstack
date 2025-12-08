@@ -1,4 +1,4 @@
-// destructure
+// array_destructure
 
 const num =[1,2,3,4,4];
 const [a,b,c,d,f] =num;
