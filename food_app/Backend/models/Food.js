@@ -1,14 +1,19 @@
-const mongoose = require('mongoose')
-
-const foodschema = new mongoose.Schema({
-    foodname: {
-        type : String,
-        required : true
-    }
-    daySinceIate: {
-        type : Number,
-        required : true
+const mongoose=require('mongoose');
+const FoodSchema=new mongoose.Schema({
+    foodName:{
+        type:String,
+        required:true
+    },
+    cuisine:{
+        type:String,
+        required:true
+    },
+    price:{
+        type:Number,
+        required:true
     }
 });
-const Food = mongoose.model("Food",foodschema);
-MediaSourceHandle.exports = Food;
+
+const Foody=mongoose.model('Food_data',FoodSchema);
+
+module.exports=Foody;
